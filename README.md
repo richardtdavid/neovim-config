@@ -1,0 +1,3 @@
+# vmrc
+
+neovim & tmux configuration
