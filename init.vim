@@ -11,7 +11,7 @@ set termguicolors
 set updatetime=300
 syntax enable
 
-
+let g:netrw_banner = 0
 "'' START PLUG ''"
 call plug#begin('~/.config/nvim/plugged')
 
@@ -34,6 +34,24 @@ Plug 'takac/vim-hardtime' " see http://vimcasts.org/blog/2013/02/habit-breaking-
 
 " Lightline
 Plug 'itchyny/lightline.vim'
+
+" Popup 
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+" Highlighting
+Plug 'ambv/black'
+
+" Ract-Snippets
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
+
+" lspsaga.nvim
+Plug 'neovim/nvim-lspconfig'
+Plug 'glepnir/lspsaga.nvim'
+
+
 
 call plug#end()
 "'' END PLUG ''"
@@ -68,6 +86,13 @@ nmap <leader>k :wincmd k<CR>
 nmap <leader>l :wincmd l<CR>
 
 
+" lspsaga Config
+lua << EOF
+require'lspconfig'.pyright.setup{}
+EOF
+
+
+
 "'' Conquer of Completion (CoC) ''"
 if filereadable(expand("~/.config/nvim/plugged/coc.nvim/plugin/coc.vim"))
   let g:coc_global_extensions=[
@@ -95,6 +120,11 @@ if filereadable(expand("~/.config/nvim/plugged/coc.nvim/plugin/coc.vim"))
       \'coc-tsserver',
       \'coc-yaml',
       \]
+"'' CoC Global Config 
+let g:coc_global_config="$HOME/.config/coc/coc-settings.json"
+
+"'' CoC-Explorer
+nnoremap <leader>e :CocCommand explorer<CR>
 
   " Always show the signcolumn, otherwise it would shift the text each time
   " diagnostics appear/become resolved.
@@ -158,12 +188,13 @@ if filereadable(expand("~/.config/nvim/plugged/coc.nvim/plugin/coc.vim"))
   " Highlight the symbol and its references when holding the cursor.
   autocmd CursorHold * silent call CocActionAsync('highlight')
 
+
   " Symbol renaming.
   nmap <leader>rn <Plug>(coc-rename)
 
   " Formatting selected code.
-  xmap <leader>f  <Plug>(coc-format-selected)
-  nmap <leader>f  <Plug>(coc-format-selected)
+  xmap <leader>fm  <Plug>(coc-format-selected)
+  nmap <leader>fm  <Plug>(coc-format-selected)
 
   augroup mygroup
     autocmd!
@@ -287,8 +318,8 @@ endif
 
 "'' Hardtime ''"
 if filereadable(expand("~/.config/nvim/plugged/vim-hardtime/plugin/hardtime.vim"))
-  let g:hardtime_default_on = 1
-  let g:hardtime_showmsg = 1
+  let g:hardtime_default_on = 0
+  let g:hardtime_showmsg = 0
 endif
 
 
@@ -297,3 +328,21 @@ if filereadable(expand("~/.config/nvim/plugged/lightline.vim/plugin/lightline.vi
   " let g:lightline = {'colorscheme' : 'horizon'}
   let g:lightline = {'colorscheme' : 'tokyonight'}
 endif
+
+"'' Hover over definitions
+nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>
+
+"'' File-finder 
+nnoremap <leader>ft <cmd>Telescope find_files<CR>
+
+" -- lsp provider to find the cursor word definition and reference
+nnoremap <leader>gh <cmd>lua require'lspsaga.provider'.lsp_finder()<CR>
+
+" source init.vim file 
+nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
+
+" console.log selected word
+nnoremap <Leader>L "ayiwoconsole.log('<C-R>a:', <C-R>a);<Esc>
+xnoremap <Leader>L "ayoconsole.log('<C-R>a:', <C-R>a);<Esc>
+"highlight Normal guibg=none
+"highlight NonText guibg=none
