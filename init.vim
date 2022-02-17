@@ -86,7 +86,7 @@ nmap <leader>k :wincmd k<CR>
 nmap <leader>l :wincmd l<CR>
 
 
-" lspsaga Config
+"'' lspsaga Config
 lua << EOF
 require'lspconfig'.pyright.setup{}
 EOF
