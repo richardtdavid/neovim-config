@@ -51,6 +51,10 @@ Plug 'mlaursen/vim-react-snippets'
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 
+" nvim v0.5.0
+Plug 'kdheepak/lazygit.nvim'
+Plug 'voldikss/vim-floaterm'
+
 
 
 call plug#end()
