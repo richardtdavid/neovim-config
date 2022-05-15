@@ -346,3 +346,16 @@ nnoremap <Leader>L "ayiwoconsole.log('<C-R>a:', <C-R>a);<Esc>
 xnoremap <Leader>L "ayoconsole.log('<C-R>a:', <C-R>a);<Esc>
 "highlight Normal guibg=none
 "highlight NonText guibg=none
+
+"open current directory in a split
+nnoremap <leader>pv :Sex!<CR>
+nnoremap <leader>sv :Vex!<CR>
+"async wait second with promise
+nnoremap <Leader>ww ofunction wait(ms: number): Promise<void> {<CR>return new Promise(res => setTimeout(res, ms));<CR>}<esc>k=i{<CR>
+
+" Terminal
+tnoremap <C-e><C-e> <C-\><C-n>
+" setup mapping to call :LazyGit
+nnoremap <silent> <leader>lg :LazyGit<CR>
+nnoremap <silent> <leader>tt :FloatermToggle<CR>
+nnoremap <silent> <leader>tg :FloatermNew lazygit<CR>
