@@ -177,6 +177,18 @@ local function packer_startup()
     end
   }
 
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly', -- optional, updated every week. (see issue #1193)
+    
+    config = function ()
+      require'Rdavid.plugins.nvim-tree'.init()
+    end
+}
+
   -- VimWiki + Zettelkasten
   use {
     'michal-h21/vim-zettel',
