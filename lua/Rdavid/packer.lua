@@ -178,6 +178,13 @@ local function packer_startup()
   }
 
   use {
+    'kyazdani42/nvim-web-devicons',
+    config = function ()
+      require'Rdavid.plugins.nvim-web-devicons'.init()
+    end
+  }
+
+  use {
     'kyazdani42/nvim-tree.lua',
     requires = {
       'kyazdani42/nvim-web-devicons', -- optional, for file icons
@@ -187,7 +194,7 @@ local function packer_startup()
     config = function ()
       require'Rdavid.plugins.nvim-tree'.init()
     end
-}
+  }
 
   -- VimWiki + Zettelkasten
   use {

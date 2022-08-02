@@ -212,6 +212,7 @@ _G.packer_plugins = {
     url = "https://github.com/romgrk/nvim-treesitter-context"
   },
   ["nvim-web-devicons"] = {
+    config = { "\27LJ\2\2M\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\tinit%Rdavid.plugins.nvim-web-devicons\frequire\0" },
     loaded = true,
     path = "/home/frost/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
@@ -316,6 +317,10 @@ time([[Config for nvim-tree.lua]], false)
 time([[Config for lspcontainers.nvim]], true)
 try_loadstring("\27LJ\2\2è\1\0\0\3\0\b\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\0016\0\0\0'\1\6\0B\0\2\0029\0\a\0B\0\1\1K\0\1\0\tinit\29Rdavid.plugins.lspconfig\21ensure_installed\1\0\0\1\v\0\0\vbashls\rdockerls\ngopls\thtml\npylsp\18rust_analyzer\16sumneko_lua\16terraformls\rtsserver\vyamlls\nsetup\18lspcontainers\frequire\0", "config", "lspcontainers.nvim")
 time([[Config for lspcontainers.nvim]], false)
+-- Config for: nvim-web-devicons
+time([[Config for nvim-web-devicons]], true)
+try_loadstring("\27LJ\2\2M\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\tinit%Rdavid.plugins.nvim-web-devicons\frequire\0", "config", "nvim-web-devicons")
+time([[Config for nvim-web-devicons]], false)
 -- Config for: vim-hardtime
 time([[Config for vim-hardtime]], true)
 try_loadstring("\27LJ\2\2D\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\tinit\28Rdavid.plugins.hardtime\frequire\0", "config", "vim-hardtime")
