@@ -148,7 +148,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/lsp_extensions.nvim"
   },
   ["lspcontainers.nvim"] = {
-    config = { "\27LJ\2\2è\1\0\0\3\0\b\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\0016\0\0\0'\1\6\0B\0\2\0029\0\a\0B\0\1\1K\0\1\0\tinit\29Rdavid.plugins.lspconfig\21ensure_installed\1\0\0\1\v\0\0\vbashls\rdockerls\ngopls\thtml\npylsp\18rust_analyzer\16sumneko_lua\16terraformls\rtsserver\vyamlls\nsetup\18lspcontainers\frequire\0" },
+    config = { "\27LJ\2\2ï¿½\1\0\0\3\0\b\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\0016\0\0\0'\1\6\0B\0\2\0029\0\a\0B\0\1\1K\0\1\0\tinit\29Rdavid.plugins.lspconfig\21ensure_installed\1\0\0\1\v\0\0\vbashls\rdockerls\ngopls\thtml\npylsp\18rust_analyzer\16sumneko_lua\16terraformls\rtsserver\vyamlls\nsetup\18lspcontainers\frequire\0" },
     loaded = true,
     path = "/home/frost/.local/share/nvim/site/pack/packer/start/lspcontainers.nvim",
     url = "https://github.com/lspcontainers/lspcontainers.nvim"
@@ -170,7 +170,7 @@ _G.packer_plugins = {
     url = "https://github.com/preservim/nerdcommenter"
   },
   ["nvim-cmp"] = {
-    config = { "\27LJ\2\2™\1\0\0\2\0\5\0\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\4\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\27Rdavid.plugins.lspkind\31Rdavid.plugins.cmp_tabnine\tinit\23Rdavid.plugins.cmp\frequire\0" },
+    config = { "\27LJ\2\2ï¿½\1\0\0\2\0\5\0\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\4\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\27Rdavid.plugins.lspkind\31Rdavid.plugins.cmp_tabnine\tinit\23Rdavid.plugins.cmp\frequire\0" },
     loaded = true,
     path = "/home/frost/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
@@ -248,7 +248,7 @@ _G.packer_plugins = {
     url = "https://github.com/folke/tokyonight.nvim"
   },
   ["trouble.nvim"] = {
-    config = { "\27LJ\2\2Ÿ\1\0\0\5\0\n\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0009\0\5\0'\1\6\0'\2\a\0'\3\b\0005\4\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\21<cmd>Trouble<cr>\15<leader>hh\6n\20nvim_set_keymap\bapi\bvim\nsetup\ftrouble\frequire\0" },
+    config = { "\27LJ\2\2ï¿½\1\0\0\5\0\n\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0009\0\5\0'\1\6\0'\2\a\0'\3\b\0005\4\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\21<cmd>Trouble<cr>\15<leader>hh\6n\20nvim_set_keymap\bapi\bvim\nsetup\ftrouble\frequire\0" },
     loaded = true,
     path = "/home/frost/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
@@ -320,7 +320,7 @@ try_loadstring("\27LJ\2\0028\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\
 time([[Config for lsp-colors.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\2Ÿ\1\0\0\5\0\n\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0009\0\5\0'\1\6\0'\2\a\0'\3\b\0005\4\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\21<cmd>Trouble<cr>\15<leader>hh\6n\20nvim_set_keymap\bapi\bvim\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+try_loadstring("\27LJ\2\2ï¿½\1\0\0\5\0\n\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0009\0\5\0'\1\6\0'\2\a\0'\3\b\0005\4\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\21<cmd>Trouble<cr>\15<leader>hh\6n\20nvim_set_keymap\bapi\bvim\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
@@ -336,11 +336,11 @@ try_loadstring("\27LJ\2\2E\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K
 time([[Config for telescope.nvim]], false)
 -- Config for: nvim-cmp
 time([[Config for nvim-cmp]], true)
-try_loadstring("\27LJ\2\2™\1\0\0\2\0\5\0\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\4\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\27Rdavid.plugins.lspkind\31Rdavid.plugins.cmp_tabnine\tinit\23Rdavid.plugins.cmp\frequire\0", "config", "nvim-cmp")
+try_loadstring("\27LJ\2\2ï¿½\1\0\0\2\0\5\0\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\1\4\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\27Rdavid.plugins.lspkind\31Rdavid.plugins.cmp_tabnine\tinit\23Rdavid.plugins.cmp\frequire\0", "config", "nvim-cmp")
 time([[Config for nvim-cmp]], false)
 -- Config for: lspcontainers.nvim
 time([[Config for lspcontainers.nvim]], true)
-try_loadstring("\27LJ\2\2è\1\0\0\3\0\b\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\0016\0\0\0'\1\6\0B\0\2\0029\0\a\0B\0\1\1K\0\1\0\tinit\29Rdavid.plugins.lspconfig\21ensure_installed\1\0\0\1\v\0\0\vbashls\rdockerls\ngopls\thtml\npylsp\18rust_analyzer\16sumneko_lua\16terraformls\rtsserver\vyamlls\nsetup\18lspcontainers\frequire\0", "config", "lspcontainers.nvim")
+try_loadstring("\27LJ\2\2ï¿½\1\0\0\3\0\b\0\0146\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\1B\0\2\0016\0\0\0'\1\6\0B\0\2\0029\0\a\0B\0\1\1K\0\1\0\tinit\29Rdavid.plugins.lspconfig\21ensure_installed\1\0\0\1\v\0\0\vbashls\rdockerls\ngopls\thtml\npylsp\18rust_analyzer\16sumneko_lua\16terraformls\rtsserver\vyamlls\nsetup\18lspcontainers\frequire\0", "config", "lspcontainers.nvim")
 time([[Config for lspcontainers.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
