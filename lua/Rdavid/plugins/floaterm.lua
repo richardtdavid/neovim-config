@@ -14,6 +14,7 @@ local function init()
   map('n', '<leader>nn', '<CMD>FloatermNew --autoclose=2 --height=0.75 --width=0.75 nnn -Hde<CR>', options)
   map('n', '<leader>ln', '<CMD>FloatermNew --autoclose=2 --height=0.9 --width=0.9 lazynpm<CR>', options)
   map('n', '<leader>tt', '<CMD>FloatermNew --autoclose=2 --height=0.9 --width=0.9 zsh<CR>', options)
+  map('n', '<C-e><C-e>', '<CMD>FloaterToggle<CR>', options)
 end
 
 return {
