@@ -42,7 +42,10 @@ local function packer_startup()
           "sumneko_lua",
           "terraformls",
           "tsserver",
-          "yamlls"
+          "yamlls",
+          "svelte",
+          "tailwindcss",
+          "clangd"
         }
       })
 
@@ -114,15 +117,6 @@ local function packer_startup()
     },
     config = function ()
       require'Rdavid.plugins.gitsigns'.init()
-    end
-  }
-
-  -- Sessions
-  -- TODO: evaluate how often I am using this (10/19/21)
-  use {
-    'rmagatti/auto-session',
-    config = function ()
-      require'Rdavid.plugins.auto_session'.init()
     end
   }
 
