@@ -120,6 +120,15 @@ local function packer_startup()
     end
   }
 
+  -- Sessions
+  -- TODO: evaluate how often I am using this (10/19/21)
+  use {
+    'rmagatti/auto-session',
+    config = function ()
+      require'Rdavid.plugins.auto_session'.init()
+    end
+  }
+
   -- Utilities
   use 'unblevable/quick-scope' -- promote use of f<key>
 

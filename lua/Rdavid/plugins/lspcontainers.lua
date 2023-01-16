@@ -116,6 +116,33 @@ local function setup(config, server)
     config.cmd = lspcontainers.command(server)
     config.root_dir = util.root_pattern(".git", vim.fn.getcwd())
   end
+
+  if server == "clangd" then
+    config.before_init = function(params)
+      params.processId = vim.NIL
+    end
+
+    config.cmd = lspcontainers.command(server)
+    config.root_dir = util.root_pattern(".git", vim.fn.getcwd())
+  end
+
+  if server == "tailwindcss" then
+    config.before_init = function(params)
+      params.processId = vim.NIL
+    end
+
+    config.cmd = lspcontainers.command(server)
+    config.root_dir = util.root_pattern(".git", vim.fn.getcwd())
+  end
+
+  if server == "svelte" then
+    config.before_init = function(params)
+      params.processId = vim.NIL
+    end
+
+    config.cmd = lspcontainers.command(server)
+    config.root_dir = util.root_pattern(".git", vim.fn.getcwd())
+  end
 end
 
 return {
