@@ -77,7 +77,7 @@ local function init()
     "prismals",
     "pylsp",
     "rust_analyzer",
-    "sumneko_lua",
+    "lua_ls",
     "terraformls",
     "tsserver",
     "yamlls",

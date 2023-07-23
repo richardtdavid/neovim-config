@@ -89,7 +89,7 @@ local function setup(config, server)
     ]], false)
   end
 
-  if server == "sumneko_lua" then
+  if server == "lua_ls" then
     config.cmd = lspcontainers.command(server)
     config.settings = lua_settings
   end

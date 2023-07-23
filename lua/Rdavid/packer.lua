@@ -39,7 +39,7 @@ local function packer_startup()
           "html",
           "pylsp",
           "rust_analyzer",
-          "sumneko_lua",
+          "lua_ls",
           "terraformls",
           "tsserver",
           "yamlls",
